@@ -17,7 +17,7 @@ def get_weight(temp, humidity, precip):
 
     #breathability weighting, relates to temp, humidity added as an extra heuristic
     a1 = 0.065
-    weight[1] = a1*max(0, temp) + math.exp(0.1*humidity) - 2 
+    weight[1] = a1*max(0, temp) + math.exp(0.01*humidity) - 2 
     
     #Comfort, relates to temp levels. More comfort assumed to be needed for levels at extremes
     a2=0.01
