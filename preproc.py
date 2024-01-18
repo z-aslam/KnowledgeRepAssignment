@@ -2,6 +2,7 @@ import pandas as pd
 import re
 
 df = pd.read_csv("./products.csv")
+# df = pd.read_csv("./products_small.csv")
 
 new_rows = []
 columns = ['title', 'price']  # Initial columns for the new DataFrame
